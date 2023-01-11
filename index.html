@@ -19,8 +19,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="./icon/coffee.png" width="50px">
-        </a>
-        <button
+          <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -31,6 +30,8 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        </a>
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -54,7 +55,9 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Christmas Collection</a></li>
                 <li><a class="dropdown-item" href="#">New Year Collection</a></li>
-            </div>
+            </ul>
+        </li>
+            
            
             <li class="collection dropdown">
               <a
@@ -69,6 +72,8 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">ZH</a></li>
                 <li><a class="dropdown-item" href="#">EN</a></li>
+            </ul>
+        </li>
             </div>
             
                 <!--<li><hr class="dropdown-divider" /></li>
@@ -94,7 +99,8 @@
               <img src="icon/search.png" width="30px">
             </button>
           </form>
-        
+
+        </ul>
         
       </div>
     </nav>
@@ -195,24 +201,34 @@
 
 
    <div class="row">
-      <div class="col">
-        <div style="padding: 30px; margin: 10px">
-          <nav class="nav justify-content-center">
+      <div class="col-3 d-flex justify-content-between" style="margin:auto;"> <!-- col is not a valid class. you need to specify the column numbers -->
+      	<!-- <use margin auto to center the column> -->
+        
+          <!-- <nav class="nav justify-content-center"> not needed -->
+          	<!-- you have opened a nav but did not close it. -->
           
             <img src="./icon/fb.svg" width="30px">
             <img src="./icon/ig.svg" width="30px">
             <img src="./icon/twitter.svg" width="30px">
-        </div>
-        
-<br/>
+       
+         </div>
+<br/><!-- what is this for ? -->
   <footer>
-   
+   <!-- never open a new tag before a closing tag, and close this new tag after the closing tag.  
+   	example:::
+
+<div>
+	<footer>
+	</div>
+	</footer>
+
+   -->
 <!--
 <a class="nav-link" href="#">Contact Us</a>
           <a class="nav-link" href="#">Subscribe</a>
 -->          
-        </nav>
-      </div>
+
+     
     </div>
   </footer>
 </html>
